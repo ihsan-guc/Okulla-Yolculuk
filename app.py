@@ -26,7 +26,7 @@ def predict():
         output = "Bisiklet ile";    
     if str(prediction) == "[[1. 0. 0.]]":
         output = "Araba ile ";
-    return render_template("index2.html", prediction_text = "Girdiğiniz verilere göre  {} Gidersiniz".format(output));
+    return render_template("index.html", prediction_text = "Girdiğiniz verilere göre  {} Gidersiniz".format(output));
 
 #run the app
 if __name__ == "__main__":
